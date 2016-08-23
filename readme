@@ -1,0 +1,1 @@
+qpcc (Quadratic Programming with Complementarity Constraints) is a set of Fortran 95 subroutines devoted to find a local and a global minimizers of an optimization problem arising in multidimensional scaling with city-block distances. More info about this optimization problem and the proposed algorithms, see the file PhDThesis.pdf.

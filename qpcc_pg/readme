@@ -1,9 +1,8 @@
-Nerijus Galiauskas
 October 19, 2015
 
 1. ABOUT
 
-These folders contain files that implement and help to execute an algorithm, devoted to find a GLOBAL minimizer of an optimization problem arising in multidimensional scaling with city-block distances. The algorithm is based on a parallel branch and bound method and is implemented by using MPI.
+These folders contain files that implement and help to execute an algorithm, devoted to find a GLOBAL minimizer of an optimization problem arising in multidimensional scaling with city-block distances. The algorithm is based on a parallel branch and bound method and is implemented using MPI.
 
 2. INPUT DATA
 
