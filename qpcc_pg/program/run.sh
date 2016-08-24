@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # the main variables
-blaslapack=/home/nerijus/lapack-3.6.1/
+blaslapack=/path/to/LAPACK
 
 cd ..
 data=$(pwd)/input/data
