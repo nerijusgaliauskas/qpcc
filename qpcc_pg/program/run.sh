@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # the main variables
-blaslapack=/path/to/lapack
+blaslapack=/home/nerijus/lapack-3.6.1/
 
 cd ..
 data=$(pwd)/input/data
@@ -21,12 +21,16 @@ mv a.out $program/$program_name
 rm *.mod
 
 # executes the program
-while read line; do
-	if [ ${line:0:1} != "#" ]; then
-		echo $program_name $data/$line
-		mpiexec -n $1 $program/$program_name < $data/$line > $output/$line.out
-	fi
-done < $input
+if [ $# -eq 0 ]; then
+    echo "Usage: ./run N, where N is a desired number of processes"
+else
+    while read line; do
+	    if [ ${line:0:1} != "#" ]; then
+		    echo $program_name $data/$line
+		    mpiexec -n $1 $program/$program_name < $data/$line > $output/$line.out
+	    fi
+    done < $input
+fi
 
 # removes unnecessary files
 rm $program/$program_name

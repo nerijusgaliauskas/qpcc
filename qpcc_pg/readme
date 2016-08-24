@@ -10,7 +10,7 @@ A set of dissimilarity matrices are presented in the folder /input/data. The fil
 
 3. COMPILATION AND EXECUTION
 
-In order to compile the program, LAPACK library is required (see http://www.netlib.org/lapack/). Path to the LAPACK library has to be set in the file /program/run.sh. In order to start the program, script /program/run.sh has to be executed in the following form:
+In order to compile the program, LAPACK library (see http://www.netlib.org/lapack/) and an implementation of MPI (for example, MPICH) are required. Path to the LAPACK library has to be set in the file /program/run.sh. In order to start the program, script /program/run.sh has to be executed in the following form:
 
 $ /program/run.sh N
 
